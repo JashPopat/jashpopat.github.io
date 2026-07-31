@@ -1,65 +1,111 @@
-# Jash Popat — Portfolio (React)
+# Jash Popat — Personal Portfolio Website
 
-A React + Vite rebuild of the portfolio site, using React Router for
-multi-page navigation (Home, Studies & Work, Projects, Extracurriculars,
-Contact).
+A modern, fast, and responsive portfolio website showcasing my work across software development, graphic design, audio/video editing, and venture-building. 
 
-## Run it locally
+This project is rebuilt from the ground up using **React**, **Vite**, and **React Router**, featuring an automated deployment pipeline powered by **GitHub Actions**.
 
-```bash
-npm install
-npm run dev
+Live site: [jashpopat.github.io](https://jashpopat.github.io)
+
+---
+
+## 🚀 Features
+
+- **Multi-Page Navigation:** Seamless, client-side routing via React Router 7 for:
+  - **Home:** Professional summary, core disciplines, and highlights.
+  - **Studies & Work:** Academic credentials (UNSW Sydney Master of IT) and professional history.
+  - **Projects:** Interactive showcase of software development and creative projects.
+  - **Extracurriculars:** Leadership, community activities, and secondary interests.
+  - **Contact:** Clean form and links to professional networks.
+- **Modern Responsive Design:** Tailored CSS grid and flexbox layouts optimized for mobile, tablet, and desktop screens.
+- **Structured Content Separation:** Key page content (such as internships, projects, and coursework) is stored in clean data models at the top of page components, allowing fast updates without modifying UI markup.
+- **Automated CI/CD:** Integrated GitHub Actions workflow that automatically installs dependencies, builds the project, and deploys to GitHub Pages upon pushing to `main`.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Framework:** React 19
+- **Bundler & Build Tool:** Vite 8 (extremely fast Hot Module Replacement)
+- **Routing:** React Router 7
+- **Styling:** Vanilla CSS3 (highly customized design tokens and layout grids)
+- **Linter/Linter Engine:** Oxlint (fast Rust-based linter)
+
+---
+
+## 💻 Local Development
+
+Follow these steps to run the application locally on your machine:
+
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) (v18 or higher recommended) installed.
+
+### Setup Instructions
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/JashPopat/jashpopat.github.io.git
+   cd jashpopat.github.io
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the local development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser:**
+   Open the local URL displayed in the terminal (usually `http://localhost:5173`).
+
+---
+
+## 📂 Project Structure
+
+```text
+├── .github/
+│   └── workflows/
+│       └── deploy.yml        # GitHub Actions CI/CD deployment configuration
+├── public/                   # Static assets (images, icons, resumes)
+├── src/
+│   ├── components/           # Reusable UI components (Nav, Footer, PathCrumb)
+│   ├── pages/                # Individual page views (Home, Projects, etc.)
+│   ├── App.jsx               # Main React Router setup
+│   ├── main.jsx              # Application entry point
+│   └── style.css             # Main styling, variables, and typography definitions
+├── .gitignore                # Rules for files/folders to be ignored by Git
+├── index.html                # Vite entry HTML template
+├── package.json              # Project scripts and dependencies
+└── vite.config.js            # Vite configuration settings
 ```
 
-Open the local URL it prints (usually `http://localhost:5173`).
+---
 
-## Project structure
+## 📦 Deployment Guide
 
-```
-src/
-  components/   Nav, Footer, PathCrumb — shared across pages
-  pages/        Home, StudiesAndWork, Projects, Extracurriculars, Contact
-  style.css     Shared design system (colors, type, layout)
-  App.jsx       Route definitions
-  main.jsx      Entry point
-```
+This project includes a fully automated deployment pipeline. When you push to the `main` branch, the GitHub Actions workflow compiles the project to static files (`dist/`) and deploys them directly to GitHub Pages.
 
-Edit content directly in the files under `src/pages/` — most page
-content lives in small data arrays at the top of each file, so adding
-or editing an entry (e.g. a new project, a new internship) doesn't
-require touching any markup.
+### Setting Up Automatic Deployment on GitHub
 
-Placeholder boxes (`[ logo: ... ]`, `[ screenshot: ... ]`) mark where
-real images should go — swap them for `<img src="..." />` tags once
-you have the assets. Put image files in `public/` and reference them
-as `/your-image.png`.
+1. Commit and push your local changes to your GitHub repository:
+   ```bash
+   git add .
+   git commit -m "Initialize project and configure CI/CD"
+   git push origin main
+   ```
+2. Go to your repository settings on GitHub: `https://github.com/JashPopat/jashpopat.github.io`.
+3. Click on **Settings** in the top navigation bar.
+4. Navigate to **Pages** in the left sidebar under the *Code and automation* section.
+5. Under **Build and deployment → Source**, change the dropdown from **Deploy from a branch** to **GitHub Actions**.
+6. The deployment pipeline will trigger automatically. You can track its progress under the **Actions** tab.
 
-## Deploying to GitHub Pages (jashpopat.github.io)
+---
 
-This repo already includes a GitHub Actions workflow
-(`.github/workflows/deploy.yml`) that builds and deploys automatically
-on every push to `main`. To enable it:
+## 👤 About the Author
 
-1. Push this project to your `jashpopat.github.io` repository
-   (replacing the old static files).
-2. In the repo, go to **Settings → Pages**.
-3. Under **Build and deployment → Source**, select **GitHub Actions**
-   (instead of "Deploy from a branch").
-4. Push to `main` — the workflow builds the site and deploys it
-   automatically. Check the **Actions** tab to watch progress.
-5. Your site will be live at `https://jashpopat.github.io` a minute or
-   two after the workflow finishes.
-
-Every future push to `main` re-deploys automatically — no manual
-build step needed.
-
-### Manual build (optional)
-
-If you ever want to build locally instead of relying on Actions:
-
-```bash
-npm run build
-```
-
-This outputs static files to `dist/`, which is what actually gets
-deployed.
+- **Name:** Jash Popat
+- **Current Education:** Master of Information Technology (Cybersecurity) at UNSW Sydney.
+- **Fields of Expertise:** Software Development, Cybersecurity, Graphic Design, Audio/Video Editing, and Entrepreneurship.
