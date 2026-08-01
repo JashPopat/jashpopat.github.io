@@ -310,7 +310,7 @@ img { max-width: 100%; display: block; }
   gap: 1rem;
 }
 .logo-img {
-  height: 36px;
+  height: 6rem;
   width: auto;
   object-fit: contain;
   opacity: 1;
@@ -689,7 +689,7 @@ img { max-width: 100%; display: block; }
 /* ---------- Footer ---------- */
 footer {
   border-top: 1px solid var(--ink-line);
-  padding: 2.5rem 0;
+  padding: 0 0;
 }
 .foot-grid {
   display: flex;
