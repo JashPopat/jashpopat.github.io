@@ -9,13 +9,13 @@ const featureCards = [
   },
   {
     num: '02',
-    title: 'History in infotech',
-    body: 'Whether immersed in lines of code or crafting audiovisual narratives, my path blends academic depth with creative expression — computer science and IT have always been core.',
+    title: 'History in Infotech',
+    body: 'Whether trying to learn a new coding language or fixing a bug in my Unity game projects, my path blends academic knowledge with a hit of creative expression.',
   },
   {
     num: '03',
-    title: 'Fine-tuning',
-    body: 'An eye for detail and a commitment to quality — bringing ideas to life through a seamless fusion of audio and visuals, or clean, considered code.',
+    title: 'Security as a standard',
+    body: 'Security isn\'t a feature I bolt on at the end but a standard I build to from start to end. Whether it\'s a web app or a piece of infrastructure, the same questions apply: what data does this touch, who can reach it, and what happens if it fails.',
   },
 ]
 
@@ -48,15 +48,16 @@ export default function Home() {
       <section className="strip wrap">
         <p className="eyebrow">worked with</p>
         <div className="logos">
-          <a href="https://wageindicator.org" target="_blank" rel="noopener noreferrer">
-            <img className="logo-img" src="/logos/wageindicator.svg" alt="WageIndicator" />
+          <a href="https://unsw.edu.au/" target="_blank" rel="noopener noreferrer">
+            <img className="logo-img" src="/logos/unsw.svg" alt="UNSW" />
           </a>
           <a href="https://hdfcbank.com" target="_blank" rel="noopener noreferrer">
             <img className="logo-img" src="/logos/hdfcbank.svg" alt="HDFC Bank" />
           </a>
-          <a href="https://priyadarshniacademy.com" target="_blank" rel="noopener noreferrer">
-            <img className="logo-img" src="/logos/priyadarshniacademy.svg" alt="Priyadarshni Academy" />
+          <a href="https://wageindicator.org" target="_blank" rel="noopener noreferrer">
+            <img className="logo-img" src="/logos/wageindicator.svg" alt="WageIndicator" />
           </a>
+          
         </div>
       </section>
 
@@ -64,10 +65,9 @@ export default function Home() {
         <p className="eyebrow">about</p>
         <h2>Hello — I'm Jash</h2>
         <p className="sub">
-          Currently completing a Master of IT specialising in Cybersecurity
-          at UNSW Sydney, I'm a passionate individual with a knack for
-          technology and a creative spirit — on a constant mission to
-          explore the ever-evolving world of computing.
+          A tech enthusiast with a knack for coding and design, I’m a person who loves a good challenge in his life. 
+          If you need to make an app, create a website or design a portfolio, I’m the person you’ve been looking for.
+
         </p>
 
         <div className="triplet">
@@ -89,12 +89,9 @@ export default function Home() {
           resume
         </p>
         <h2>Download my CV / résumé</h2>
-        <a className="btn primary" href="#" style={{ marginTop: '1rem' }}>
+        <a className="btn primary" href="/files/CV.pdf" style={{ marginTop: '1rem' }}>
           Download PDF
         </a>
-        <p className="sub" style={{ margin: '0.75rem auto 0' }}>
-          Placeholder — link your résumé file here.
-        </p>
       </section>
     </>
   )

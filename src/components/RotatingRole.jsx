@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from 'react'
 
 const ROLES = [
   { text: 'Jash Popat', color: 'var(--amber)', textColor: 'var(--ink)' },
+  { text: 'a Security Engineer', color: 'var(--sage)', textColor: 'var(--ink)' },
   { text: 'a Software Developer', color: 'var(--teal)', textColor: 'var(--paper)' },
   { text: 'a Graphic Designer', color: 'var(--rose)', textColor: 'var(--paper)' },
   { text: 'an Audio/Video Editor', color: 'var(--violet)', textColor: 'var(--paper)' },
-  { text: 'an Entrepreneur', color: 'var(--sage)', textColor: 'var(--ink)' },
 ]
 
 const HOLD_MS = 1800
