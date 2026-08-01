@@ -48,9 +48,15 @@ export default function Home() {
       <section className="strip wrap">
         <p className="eyebrow">worked with</p>
         <div className="logos">
-          <span className="logoph">[ logo: WageIndicator ]</span>
-          <span className="logoph">[ logo: HDFC Bank ]</span>
-          <span className="logoph">[ logo: Priyadarshni Academy ]</span>
+          <a href="https://wageindicator.org" target="_blank" rel="noopener noreferrer">
+            <img className="logo-img" src="/logos/wageindicator.svg" alt="WageIndicator" />
+          </a>
+          <a href="https://hdfcbank.com" target="_blank" rel="noopener noreferrer">
+            <img className="logo-img" src="/logos/hdfcbank.svg" alt="HDFC Bank" />
+          </a>
+          <a href="https://priyadarshniacademy.com" target="_blank" rel="noopener noreferrer">
+            <img className="logo-img" src="/logos/priyadarshniacademy.svg" alt="Priyadarshni Academy" />
+          </a>
         </div>
       </section>
 

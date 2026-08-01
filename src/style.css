@@ -194,7 +194,7 @@ img { max-width: 100%; display: block; }
 
 /* Hero title variant used with the rotating role pill:
    "Hello, I am [pill]" wraps naturally on narrow screens. */
-.hero-title {
+.hero .hero-title {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: clamp(4.4rem, 12vw, 9.6rem);
@@ -252,7 +252,7 @@ img { max-width: 100%; display: block; }
 .hero p.lede {
   max-width: 56ch;
   color: var(--paper-dim);
-  margin: 0 0 2.2rem;
+  margin: 1rem 0 2rem;
 }
 .btnrow { display: flex; gap: 0.9rem; flex-wrap: wrap; }
 .btn {
@@ -304,9 +304,21 @@ img { max-width: 100%; display: block; }
 .strip .eyebrow { margin-bottom: 1.4rem; }
 .strip .logos {
   display: flex;
-  gap: 2.5rem;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  gap: 1rem;
+}
+.logo-img {
+  height: 6rem;
+  width: auto;
+  object-fit: contain;
+  opacity: 1;
+  transition: opacity .2s ease, filter .2s ease;
+}
+.logo-img:hover {
+  opacity: 0.5;
+  filter: none;
 }
 .logoph {
   font-family: var(--font-mono);
@@ -315,6 +327,8 @@ img { max-width: 100%; display: block; }
   border: 1px dashed var(--ink-line);
   padding: 0.7rem 1rem;
   border-radius: 6px;
+  flex: 1;
+  text-align: center;
 }
 
 /* ---------- Section ---------- */
