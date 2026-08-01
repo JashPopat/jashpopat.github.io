@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <footer className="wrap">
-      <div className="foot-grid">
+    <footer>
+      <div className="wrap foot-grid">
         <span>© Jash Popat</span>
         <div className="foot-links">
           <Link to="/studies-and-work">studies &amp; work</Link>
