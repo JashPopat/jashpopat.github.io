@@ -31,9 +31,8 @@ export default function Home() {
         <h1><RotatingRole /></h1>
         <p className="lede">
           Currently pursuing a Master of Information Technology (Cybersecurity)
-          at UNSW Sydney. I move between code, design and story-telling —
-          building things, breaking them to understand how they work, then
-          explaining what I learned.
+          at the University of New South Wales (UNSW) Sydney, I move between code, design and story-telling as I explore 
+          the ever-evolving world of computing.
         </p>
         <div className="btnrow">
           <Link className="btn primary" to="/studies-and-work">

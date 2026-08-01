@@ -225,7 +225,7 @@ img { max-width: 100%; display: block; }
 .role-pill-text {
   transition: opacity 200ms ease;
   font-weight: 600;
-  padding: 0.02em 0;
+  padding: 0.1em 0 0.2em 0;
 }
 .role-pill-measure {
   position: absolute;
