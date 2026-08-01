@@ -32,37 +32,6 @@ Live site: [jashpopat.github.io](https://jashpopat.github.io)
 
 ---
 
-## 💻 Local Development
-
-Follow these steps to run the application locally on your machine:
-
-### Prerequisites
-
-Make sure you have [Node.js](https://nodejs.org/) (v18 or higher recommended) installed.
-
-### Setup Instructions
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/JashPopat/jashpopat.github.io.git
-   cd jashpopat.github.io
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Start the local development server:**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open in browser:**
-   Open the local URL displayed in the terminal (usually `http://localhost:5173`).
-
----
-
 ## 📂 Project Structure
 
 ```text
@@ -81,26 +50,6 @@ Make sure you have [Node.js](https://nodejs.org/) (v18 or higher recommended) in
 ├── package.json              # Project scripts and dependencies
 └── vite.config.js            # Vite configuration settings
 ```
-
----
-
-## 📦 Deployment Guide
-
-This project includes a fully automated deployment pipeline. When you push to the `main` branch, the GitHub Actions workflow compiles the project to static files (`dist/`) and deploys them directly to GitHub Pages.
-
-### Setting Up Automatic Deployment on GitHub
-
-1. Commit and push your local changes to your GitHub repository:
-   ```bash
-   git add .
-   git commit -m "Initialize project and configure CI/CD"
-   git push origin main
-   ```
-2. Go to your repository settings on GitHub: `https://github.com/JashPopat/jashpopat.github.io`.
-3. Click on **Settings** in the top navigation bar.
-4. Navigate to **Pages** in the left sidebar under the *Code and automation* section.
-5. Under **Build and deployment → Source**, change the dropdown from **Deploy from a branch** to **GitHub Actions**.
-6. The deployment pipeline will trigger automatically. You can track its progress under the **Actions** tab.
 
 ---
 
