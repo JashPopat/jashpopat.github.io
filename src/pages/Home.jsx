@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import RotatingRole from '../components/RotatingRole.jsx'
 
 const featureCards = [
   {
@@ -22,13 +23,12 @@ export default function Home() {
   return (
     <>
       <header className="hero wrap">
-        <div className="badge">clearance: public profile</div>
-        <h1>Jash Popat</h1>
-        <p className="role">
-          Software Developer<span className="sep">/</span>Graphic Designer
-          <span className="sep">/</span>Audio-Video Editor
-          <span className="sep">/</span>Entrepreneur
-        </p>
+        <div className="tagline">
+          <h1 className="hero-title">
+          Hello, I am
+          
+        </h1>
+        <h1><RotatingRole /></h1>
         <p className="lede">
           Currently pursuing a Master of Information Technology (Cybersecurity)
           at UNSW Sydney. I move between code, design and story-telling —
@@ -43,43 +43,8 @@ export default function Home() {
             view projects
           </Link>
         </div>
-
-        <div className="network">
-          <svg
-            viewBox="0 0 800 220"
-            role="img"
-            aria-label="Network diagram connecting Jash's four working disciplines"
-          >
-            <line x1="400" y1="110" x2="130" y2="45" stroke="#2c3348" strokeWidth="1.5" />
-            <line x1="400" y1="110" x2="670" y2="45" stroke="#2c3348" strokeWidth="1.5" />
-            <line x1="400" y1="110" x2="130" y2="175" stroke="#2c3348" strokeWidth="1.5" />
-            <line x1="400" y1="110" x2="670" y2="175" stroke="#2c3348" strokeWidth="1.5" />
-
-            <circle cx="400" cy="110" r="7" fill="#e3a73c" />
-            <circle cx="130" cy="45" r="5" fill="#4fa69c" />
-            <circle cx="670" cy="45" r="5" fill="#4fa69c" />
-            <circle cx="130" cy="175" r="5" fill="#4fa69c" />
-            <circle cx="670" cy="175" r="5" fill="#4fa69c" />
-
-            <text x="400" y="140" textAnchor="middle" fill="#f5f1e7" fontFamily="IBM Plex Mono, monospace" fontSize="12">
-              JASH POPAT
-            </text>
-            <text x="130" y="30" textAnchor="middle" fill="#b9b6ac" fontFamily="IBM Plex Mono, monospace" fontSize="11">
-              dev
-            </text>
-            <text x="670" y="30" textAnchor="middle" fill="#b9b6ac" fontFamily="IBM Plex Mono, monospace" fontSize="11">
-              design
-            </text>
-            <text x="130" y="200" textAnchor="middle" fill="#b9b6ac" fontFamily="IBM Plex Mono, monospace" fontSize="11">
-              audio / video
-            </text>
-            <text x="670" y="200" textAnchor="middle" fill="#b9b6ac" fontFamily="IBM Plex Mono, monospace" fontSize="11">
-              venture-building
-            </text>
-          </svg>
-          <p className="caption">four disciplines, one working method</p>
-        </div>
-      </header>
+      </div>
+    </header>
 
       <section className="strip wrap">
         <p className="eyebrow">worked with</p>

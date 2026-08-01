@@ -14,6 +14,8 @@
   --amber:      #e3a73c;
   --teal:       #4fa69c;
   --rose:       #c9556b;
+  --violet:     #8b7fd6;
+  --sage:       #8bb36a;
 
   --font-display: 'Fraunces', serif;
   --font-body: 'IBM Plex Sans', sans-serif;
@@ -153,7 +155,6 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Hero ---------- */
 .hero {
-  padding: 2.5rem 0 4rem;
   position: relative;
 }
 .badge {
@@ -182,6 +183,63 @@ img { max-width: 100%; display: block; }
   line-height: 1.02;
   margin: 0 0 0.6rem;
   letter-spacing: -0.01em;
+}
+.tagline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Hero title variant used with the rotating role pill:
+   "Hello, I am [pill]" wraps naturally on narrow screens. */
+.hero-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(4.4rem, 12vw, 9.6rem);
+  line-height: 1.15;
+  margin: 0 0 1.5rem;
+  letter-spacing: -0.01em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.55rem;
+}
+
+.role-pill-wrap {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.role-pill {
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  border-radius: 10px;
+  padding: 0 0.45em;
+  transition: width 320ms cubic-bezier(.65,0,.35,1), background 320ms ease;
+  vertical-align: bottom;
+}
+.role-pill-text {
+  transition: opacity 200ms ease;
+  font-weight: 600;
+  padding: 0.02em 0;
+}
+.role-pill-measure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+  padding: 0 0.45em;
+  font-weight: 600;
+}
+@media (prefers-reduced-motion: reduce) {
+  .role-pill { transition: none; }
+  .role-pill-text { transition: none; }
 }
 .hero .role {
   font-family: var(--font-mono);
